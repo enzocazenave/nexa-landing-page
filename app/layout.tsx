@@ -1,6 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { SITE } from "@/lib/config";
+import {
+  GoogleTagManager,
+  GoogleTagManagerNoScript,
+} from "@/components/GoogleTagManager";
+import { CalendlyLoader } from "@/components/CalendlyLoader";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -56,8 +61,17 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
           rel="stylesheet"
         />
+        <link
+          rel="stylesheet"
+          href="https://assets.calendly.com/assets/external/widget.css"
+        />
       </head>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <GoogleTagManagerNoScript />
+        {children}
+        <GoogleTagManager />
+        <CalendlyLoader />
+      </body>
     </html>
   );
 }

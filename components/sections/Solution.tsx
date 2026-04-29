@@ -90,7 +90,7 @@ export function Solution() {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <CTAButton size="lg" trackingId="solution">
+          <CTAButton size="lg" location="solution">
             Agendá una llamada
           </CTAButton>
         </div>

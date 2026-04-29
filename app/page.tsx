@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { StickyCTA } from "@/components/StickyCTA";
 import { Footer } from "@/components/Footer";
+import { AnalyticsTracker } from "@/components/AnalyticsTracker";
 import { Hero } from "@/components/sections/Hero";
 import { Problem } from "@/components/sections/Problem";
 import { Agitation } from "@/components/sections/Agitation";
@@ -17,6 +18,7 @@ import { FinalCTA } from "@/components/sections/FinalCTA";
 export default function Page() {
   return (
     <>
+      <AnalyticsTracker />
       <Navbar />
       <main>
         <Hero />

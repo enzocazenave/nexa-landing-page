@@ -6,7 +6,8 @@ export const SITE = {
   description:
     "Programa de 90 días para entender tu negocio, instalar un sistema de control y dirigir con información clara. 1 a 1 con Juan Pablo Garay.",
   url: "https://nexa.consulting",
-  calendly: "https://calendly.com/juampi-nexa/30min",
+  calendly: "https://calendly.com/enzocazenave/30min",
   ctaText: "Agendá una llamada",
   ctaLong: "Agendá una llamada gratuita",
+  gtmId: "GTM-MBBRXNNN",
 };

@@ -24,7 +24,7 @@ export function StickyCTA() {
     >
       <CTAButton
         size="lg"
-        trackingId="sticky-mobile"
+        location="sticky-mobile"
         className="w-full justify-center"
       >
         Agendá una llamada gratuita

@@ -29,7 +29,7 @@ export function FinalCTA() {
           </p>
 
           <div className="mt-10 flex flex-col items-center gap-4">
-            <CTAButton size="lg" trackingId="final">
+            <CTAButton size="lg" location="final">
               Agendá tu llamada
             </CTAButton>
             <p className="text-sm text-muted-dim">

@@ -30,7 +30,7 @@ export function Hero() {
           </p>
 
           <div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
-            <CTAButton size="lg" trackingId="hero-primary">
+            <CTAButton size="lg" location="hero">
               Agendá una llamada gratuita
             </CTAButton>
             <a
