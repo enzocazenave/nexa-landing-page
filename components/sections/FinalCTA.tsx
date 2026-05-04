@@ -19,18 +19,17 @@ export function FinalCTA() {
       <div className="container-nexa">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="heading-display text-4xl leading-tight sm:text-6xl">
-            NEXA Foundations es{" "}
-            <span className="text-gradient">por aplicación.</span>
+            Hablemos de{" "}
+            <span className="text-gradient">tu negocio.</span>
           </h2>
           <p className="mt-6 text-muted-soft sm:text-lg">
-            Trabajamos 1 a 1 con un máximo de 5 clientes por mes. La llamada
-            de 30 minutos es para ver dónde estás hoy y evaluar si tiene
-            sentido avanzar.
+            Una llamada de 30 minutos para entender qué está pasando hoy,
+            dónde están las oportunidades y qué tendría sentido mover primero.
           </p>
 
           <div className="mt-10 flex flex-col items-center gap-4">
             <CTAButton size="lg" location="final">
-              Agendá tu llamada
+              Agendá una llamada
             </CTAButton>
             <p className="text-sm text-muted-dim">
               30 minutos · Sin costo · Sin compromiso

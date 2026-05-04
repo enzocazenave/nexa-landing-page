@@ -21,8 +21,8 @@ export function Agitation() {
           </p>
           <p className="mt-6 max-w-2xl text-muted-soft sm:text-lg">
             Sin esa claridad, las decisiones se toman por intuición, los
-            resultados son difíciles de explicar y el crecimiento depende de la
-            energía del dueño antes que del sistema.
+            resultados son difíciles de explicar y el crecimiento queda atado
+            a tu energía en lugar de apoyarse en lo que realmente lo mueve.
           </p>
         </div>
       </div>

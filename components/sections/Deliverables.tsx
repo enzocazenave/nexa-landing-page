@@ -2,59 +2,54 @@ import { SectionTag } from "../ui/SectionTag";
 
 const GROUPS = [
   {
+    title: "Diagnóstico",
+    items: [
+      "Lectura integral del negocio",
+      "Identificación de variables clave",
+      "Hipótesis claras sobre el crecimiento",
+      "Detección de cuellos de botella",
+    ],
+  },
+  {
     title: "Claridad",
     items: [
-      "Mapa del negocio en 4 sistemas",
-      "Diagnóstico estructural",
-      "Perfil de cliente ideal",
-      "Proceso comercial documentado",
-      "Estructura de rentabilidad",
-      "Precio mínimo viable",
-      "Proyección cada 4 semanas",
+      "Visibilidad sobre cómo funciona el negocio",
+      "Lectura honesta de la rentabilidad",
+      "Lo importante separado del ruido",
+      "Decisiones apoyadas en información",
     ],
   },
   {
-    title: "Control",
+    title: "Orden",
     items: [
-      "Dashboard de métricas",
-      "Libro de reglas del negocio",
-      "Mapa de procesos críticos",
-      "Plantilla de documentación",
-      "Rutina de control semanal",
+      "Prioridades definidas con criterio",
+      "Foco en lo que realmente impacta",
+      "Menos urgencias, más decisiones",
+      "Estructura para sostener el crecimiento",
     ],
   },
   {
-    title: "Crecimiento",
+    title: "Dirección",
     items: [
-      "Auditoría de tiempo del dueño",
-      "Sistema de delegación",
-      "Matriz de responsabilidades",
-      "Plan de acción de 90 días",
-      "Sistema de revisión mensual",
-    ],
-  },
-  {
-    title: "Acompañamiento",
-    items: [
-      "6 sesiones 1 a 1 de 90 minutos",
-      "Seguimiento asincrónico semanal",
+      "Plan de acción concreto y aplicable",
+      "Criterios para tomar decisiones difíciles",
+      "Una dirección clara de adónde va el negocio",
     ],
   },
 ];
 
 export function Deliverables() {
   return (
-    <section id="entregables" className="relative py-20 sm:py-28">
+    <section id="areas" className="relative py-20 sm:py-28">
       <div className="container-nexa">
         <div className="max-w-2xl">
-          <SectionTag>Entregables</SectionTag>
+          <SectionTag>Áreas de trabajo</SectionTag>
           <h2 className="heading-display mt-5 text-3xl sm:text-5xl">
-            Qué te llevás del proceso.
+            Sobre qué trabajamos en una consultoría.
           </h2>
           <p className="mt-5 text-muted-soft sm:text-lg">
-            Cada entregable está pensado para quedar instalado en el negocio:
-            documentos, sistemas y rutinas que siguen funcionando después del
-            programa.
+            Cada negocio es distinto. El alcance del trabajo se define después
+            de entender qué está pasando y qué necesita moverse primero.
           </p>
         </div>
 

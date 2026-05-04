@@ -5,40 +5,38 @@ import { SectionTag } from "../ui/SectionTag";
 const PHASES = [
   {
     n: "01",
-    tag: "Fase 1",
-    title: "Claridad y diagnóstico",
+    tag: "Etapa 1",
+    title: "Diagnóstico",
     body: "Entendemos cómo funciona el negocio realmente.",
     bullets: [
-      "Análisis de origen y comportamiento de clientes",
-      "Medición de márgenes por producto",
-      "Análisis del flujo de caja",
+      "Lectura del negocio de punta a punta",
       "Identificación de qué está frenando el crecimiento",
-      "Detección de variables de mayor impacto",
+      "Detección de las variables de mayor impacto",
+      "Hipótesis claras sobre dónde están las oportunidades",
     ],
   },
   {
     n: "02",
-    tag: "Fase 2",
-    title: "Sistema y control",
-    body: "Instalamos un tablero de control simple del negocio.",
+    tag: "Etapa 2",
+    title: "Orden y prioridades",
+    body: "Ordenamos lo que hay y definimos qué mover primero.",
     bullets: [
-      "Definición de métricas claras",
-      "Tablero de control del negocio",
-      "Criterios de decisión",
-      "Documentación de procesos críticos",
-      "Operación consistente",
+      "Definición de qué decisiones generan impacto real",
+      "Criterios claros para priorizar",
+      "Foco puesto donde el negocio lo necesita",
+      "Lo importante separado del ruido",
     ],
   },
   {
     n: "03",
-    tag: "Fase 3",
-    title: "Equipo y dirección",
-    body: "Transformamos el conocimiento en procesos ejecutables.",
+    tag: "Etapa 3",
+    title: "Foco y dirección",
+    body: "El negocio empieza a moverse con criterio, no por intuición.",
     bullets: [
-      "Roles y responsabilidades definidos",
-      "Delegación de decisiones",
-      "Reducción de la dependencia operativa",
-      "Autonomía y previsibilidad del negocio",
+      "Decisiones basadas en información, no en suposiciones",
+      "Esfuerzo enfocado en lo que mueve la aguja",
+      "Menos depender de tu energía constante",
+      "Una dirección clara de adónde va el negocio",
     ],
   },
 ];
@@ -48,16 +46,16 @@ export function Solution() {
     <section id="solucion" className="relative py-20 sm:py-28">
       <div className="container-nexa">
         <div className="max-w-3xl">
-          <SectionTag>NEXA Foundations</SectionTag>
+          <SectionTag>Cómo trabajamos</SectionTag>
           <h2 className="heading-display mt-5 text-3xl sm:text-5xl">
-            Un programa de consultoría 1 a 1 de{" "}
-            <span className="text-gradient">90 días</span> para entender el
-            negocio y dirigirlo con información clara.
+            Diagnóstico, orden y{" "}
+            <span className="text-gradient">foco</span> en lo que realmente
+            mueve el negocio.
           </h2>
           <p className="mt-5 text-muted-soft sm:text-lg">
-            El objetivo no es trabajar más. Es crear estructura para que el
-            negocio crezca sin depender de tu presencia constante. En 3 meses
-            pasás de operar por intuición a dirigir con información clara.
+            El objetivo no es trabajar más. Es entender qué está pasando,
+            ordenar las prioridades y enfocar el esfuerzo donde realmente
+            impacta.
           </p>
         </div>
 

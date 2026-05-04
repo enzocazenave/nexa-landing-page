@@ -2,44 +2,44 @@ import { SectionTag } from "../ui/SectionTag";
 
 const BLOCKS = [
   {
-    range: "Semanas 1 – 5",
-    title: "Análisis del negocio",
+    range: "Etapa 01",
+    title: "Lectura del negocio",
     items: [
-      "Márgenes, clientes y flujo de caja",
-      "Identificación de variables clave",
+      "Cómo está funcionando hoy",
+      "Dónde se está perdiendo energía",
     ],
   },
   {
-    range: "Semanas 6 – 8",
-    title: "Sistema de control",
+    range: "Etapa 02",
+    title: "Diagnóstico claro",
     items: [
-      "Definición de métricas",
-      "Documentación de procesos",
+      "Qué está moviendo el negocio",
+      "Qué está frenando el crecimiento",
     ],
   },
   {
-    range: "Semanas 9 – 11",
-    title: "Equipo y delegación",
+    range: "Etapa 03",
+    title: "Orden y prioridades",
     items: [
-      "Procesos ejecutables",
-      "Reducción de dependencia operativa",
+      "Qué decisiones priorizar",
+      "Dónde poner el foco primero",
     ],
   },
   {
-    range: "Semana 12",
-    title: "Plan y seguimiento",
-    items: ["Plan de 90 días siguientes", "Sistema de seguimiento"],
+    range: "Etapa 04",
+    title: "Dirección y seguimiento",
+    items: ["Plan de acción concreto", "Criterios para sostenerlo"],
   },
 ];
 
 export function Timeline() {
   return (
-    <section id="programa" className="relative py-20 sm:py-28">
+    <section id="proceso-trabajo" className="relative py-20 sm:py-28">
       <div className="container-nexa">
         <div className="max-w-2xl">
-          <SectionTag>El programa</SectionTag>
+          <SectionTag>El proceso</SectionTag>
           <h2 className="heading-display mt-5 text-3xl sm:text-5xl">
-            12 semanas, divididas en 4 bloques de trabajo.
+            Un orden claro: del diagnóstico a la acción.
           </h2>
         </div>
 

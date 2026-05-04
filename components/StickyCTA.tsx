@@ -27,7 +27,7 @@ export function StickyCTA() {
         location="sticky-mobile"
         className="w-full justify-center"
       >
-        Agendá una llamada gratuita
+        Agendá una llamada
       </CTAButton>
     </div>
   );

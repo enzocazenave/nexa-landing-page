@@ -20,24 +20,24 @@ export function Hero() {
           <h1 className="heading-display mt-6 text-[2.6rem] leading-[1.05] sm:text-6xl lg:text-7xl">
             Tu negocio crece.
             <br />
-            Pero <span className="text-gradient">depende de vos.</span>
+            Pero <span className="text-gradient">no sabés qué lo está moviendo.</span>
           </h1>
 
           <p className="mt-6 max-w-2xl text-base text-muted-soft sm:text-lg sm:leading-relaxed">
-            Ayudamos a dueños de negocios establecidos a entender y ordenar sus
-            sistemas para que el negocio funcione — y crezca — sin que todo
-            pase por sus manos.
+            Te ayudamos a entender qué está pasando en tu negocio, ordenar
+            prioridades y enfocar el esfuerzo en lo que realmente genera
+            resultados.
           </p>
 
           <div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
             <CTAButton size="lg" location="hero">
-              Agendá una llamada gratuita
+              Agendá una llamada
             </CTAButton>
             <a
               href="#solucion"
               className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/[0.02] px-6 py-4 text-base font-semibold text-white transition hover:border-nexa-teal/60 hover:text-nexa-tealGlow"
             >
-              ¿Qué hacemos?
+              ¿Cómo trabajamos?
             </a>
           </div>
 

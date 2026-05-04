@@ -2,16 +2,16 @@ import { SectionTag } from "../ui/SectionTag";
 
 const FIT = [
   "Sos dueño de negocio o founder",
-  "Facturación anual entre USD 300K y USD 1M",
-  "Tenés un equipo de al menos 3 personas",
-  "El negocio funciona, pero está desordenado",
-  "Necesitás sistemas y estás dispuesto a construirlos",
+  "El negocio ya factura y tiene cierta estructura",
+  "Sentís que estás operando más por intuición que por criterio",
+  "Querés entender qué está pasando antes de seguir tomando decisiones",
+  "Estás dispuesto a mirar el negocio con honestidad",
 ];
 
 const NOT_FIT = [
   "Estás recién empezando y todavía no tenés clientes",
-  "Buscás resultados inmediatos, en menos de un mes",
-  "No querés trabajar sobre los sistemas del negocio",
+  "Buscás resultados inmediatos sin un diagnóstico previo",
+  "No querés revisar cómo se toman las decisiones hoy",
   "Buscás una receta estandarizada o fórmula rápida",
 ];
 
@@ -24,7 +24,7 @@ export function ForWhom() {
           <h2 className="heading-display mt-5 text-3xl sm:text-5xl">
             Trabajamos con dueños que quieren{" "}
             <span className="text-gradient">
-              dirigir su negocio con claridad.
+              entender qué está pasando en su negocio.
             </span>
           </h2>
         </div>

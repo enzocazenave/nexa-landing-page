@@ -4,32 +4,32 @@ import { SectionTag } from "../ui/SectionTag";
 const PROBLEMS = [
   {
     n: "01",
-    title: "No hay claridad",
+    title: "Falta de claridad",
     bullets: [
-      "No sabés exactamente de dónde vienen tus clientes",
-      "No sabés cuánto ganás por producto",
-      "No sabés qué está frenando el crecimiento",
-      "Las decisiones se toman por intuición, no por datos",
+      "No sabés con certeza de dónde vienen los resultados",
+      "No tenés visibilidad real de la rentabilidad",
+      "Las decisiones se toman por intuición",
+      "No es claro qué está frenando el crecimiento",
     ],
   },
   {
     n: "02",
-    title: "El negocio depende de vos",
+    title: "Negocio apagando incendios",
     bullets: [
       "Todo pasa por tus manos",
-      "El equipo necesita consultarte para avanzar",
-      "Los procesos no están documentados",
+      "El día se va resolviendo urgencias",
+      "Los procesos no están definidos",
       "Cuando no estás, el negocio se frena",
     ],
   },
   {
     n: "03",
-    title: "No hay criterio de prioridad",
+    title: "Sin foco ni prioridades",
     bullets: [
-      "Hay muchas cosas importantes al mismo tiempo",
-      "No es claro qué priorizar",
-      "Se trabaja mucho sin saber qué decisión impacta más",
-      "El esfuerzo no siempre se traduce en resultados",
+      "Hay muchas cosas importantes a la vez",
+      "No es claro qué mover primero",
+      "Se trabaja mucho sin saber qué impacta más",
+      "El esfuerzo no se traduce en crecimiento",
     ],
   },
 ];
@@ -41,12 +41,13 @@ export function Problem() {
         <div className="max-w-2xl">
           <SectionTag>Si te suena familiar</SectionTag>
           <h2 className="heading-display mt-5 text-3xl sm:text-5xl">
-            Querés crecer. Vender más, tener más tiempo, que el equipo funcione
-            sin que estés en todo.
+            Mucho esfuerzo, mucho ruido y la sensación de estar siempre
+            apagando incendios.
           </h2>
           <p className="mt-5 text-muted-soft sm:text-lg">
-            El problema casi nunca es la falta de esfuerzo. Es no tener
-            claridad sobre qué mover primero.
+            El problema casi nunca es la falta de trabajo. Es no tener claridad
+            sobre qué está moviendo el negocio y qué solo te está consumiendo
+            energía.
           </p>
         </div>
 

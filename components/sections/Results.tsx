@@ -3,24 +3,24 @@ import { SectionTag } from "../ui/SectionTag";
 
 const OUTCOMES = [
   {
-    k: "Datos, no suposiciones",
-    v: "Un negocio que genera información clara sobre cómo funciona.",
+    k: "Decisiones con criterio",
+    v: "Sabés qué mover y por qué, en lugar de operar por intuición.",
   },
   {
-    k: "Sistema que sostiene",
-    v: "Una operación que funciona aunque vos no estés presente.",
+    k: "Foco en lo que importa",
+    v: "Energía puesta en lo que realmente mueve el negocio.",
   },
   {
-    k: "Equipo con autonomía",
-    v: "Un equipo que no depende de vos para cada decisión.",
+    k: "Menos incendios",
+    v: "Menos urgencias, más decisiones tomadas a tiempo.",
   },
   {
-    k: "Plan de prioridades",
-    v: "Claridad sobre qué mover cada semana y por qué.",
+    k: "Prioridades claras",
+    v: "Sabés qué viene primero y qué puede esperar.",
   },
   {
-    k: "Tiempo recuperado",
-    v: "Más tiempo para dirigir el negocio, menos tiempo dentro de él.",
+    k: "Una dirección concreta",
+    v: "Un norte claro de adónde va el negocio y cómo llegar.",
   },
 ];
 
@@ -29,9 +29,9 @@ export function Results() {
     <section id="resultados" className="relative py-20 sm:py-28">
       <div className="container-nexa">
         <div className="max-w-2xl">
-          <SectionTag>En 90 días</SectionTag>
+          <SectionTag>Después del trabajo</SectionTag>
           <h2 className="heading-display mt-5 text-3xl sm:text-5xl">
-            Resultados concretos al cierre del programa.
+            Qué cambia cuando hay diagnóstico, orden y foco.
           </h2>
         </div>
 
@@ -53,9 +53,9 @@ export function Results() {
 
         <div className="mt-10 grid gap-4 sm:grid-cols-3">
           {[
-            { k: "+2 pts", v: "de margen ≈ +USD 10.000 / año" },
-            { k: "10–20 hs", v: "recuperadas por semana" },
-            { k: "30 min", v: "por semana para entender el negocio" },
+            { k: "Claridad", v: "sobre qué mueve realmente el negocio" },
+            { k: "Foco", v: "en las decisiones que tienen impacto real" },
+            { k: "Orden", v: "para crecer sin vivir apagando incendios" },
           ].map((m) => (
             <div
               key={m.k}

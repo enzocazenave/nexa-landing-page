@@ -5,17 +5,17 @@ const STEPS = [
   {
     n: 1,
     title: "Agendás la llamada",
-    body: "Sin costo ni compromiso. 30 minutos para hablar de tu negocio.",
+    body: "30 minutos, sin costo ni compromiso, para hablar de tu negocio.",
   },
   {
     n: 2,
-    title: "Entendemos dónde estás",
-    body: "Revisamos juntos cómo funciona tu negocio hoy y qué necesita.",
+    title: "Entendemos qué está pasando",
+    body: "Conversamos sobre cómo está hoy el negocio y dónde están las trabas.",
   },
   {
     n: 3,
-    title: "Vemos si tiene sentido",
-    body: "Solo avanzamos si el trabajo tiene sentido para los dos.",
+    title: "Vemos si tiene sentido seguir",
+    body: "Si encaja para los dos, te contamos cómo podríamos avanzar.",
   },
 ];
 
