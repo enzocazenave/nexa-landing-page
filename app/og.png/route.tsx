@@ -16,8 +16,9 @@ export async function GET() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "80px",
-          background:
-            "radial-gradient(60% 60% at 30% 20%, rgba(45,212,191,0.22) 0%, rgba(45,212,191,0) 60%), radial-gradient(50% 50% at 80% 90%, rgba(59,130,246,0.18) 0%, rgba(59,130,246,0) 60%), #05080F",
+          backgroundColor: "#05080F",
+          backgroundImage:
+            "radial-gradient(circle at 30% 20%, rgba(45,212,191,0.22) 0%, rgba(45,212,191,0) 60%), radial-gradient(circle at 80% 90%, rgba(59,130,246,0.18) 0%, rgba(59,130,246,0) 60%)",
           color: "#FFFFFF",
           fontFamily: "sans-serif",
           position: "relative",
@@ -74,16 +75,9 @@ export async function GET() {
             }}
           >
             <span>Tu negocio crece.</span>
-            <span>
-              Pero{" "}
-              <span
-                style={{
-                  background:
-                    "linear-gradient(90deg, #2DD4BF 0%, #5EEAD4 50%, #60A5FA 100%)",
-                  backgroundClip: "text",
-                  color: "transparent",
-                }}
-              >
+            <span style={{ display: "flex" }}>
+              Pero&nbsp;
+              <span style={{ color: "#5EEAD4" }}>
                 ¿qué lo está moviendo?
               </span>
             </span>
