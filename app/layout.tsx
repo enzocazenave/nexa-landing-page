@@ -45,10 +45,12 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/opengraph-image",
+        url: `${SITE.url}/og.png`,
+        secureUrl: `${SITE.url}/og.png`,
         width: 1200,
         height: 630,
         alt: "NEXA · Consultoría para dueños de negocios",
+        type: "image/png",
       },
     ],
   },
@@ -56,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: OG_TITLE,
     description: OG_DESCRIPTION,
-    images: ["/opengraph-image"],
+    images: [`${SITE.url}/og.png`],
     creator: "@nexaconsulting",
   },
   robots: {
@@ -96,7 +98,7 @@ export default function RootLayout({
         "@id": `${SITE.url}/#organization`,
         name: SITE.name,
         url: SITE.url,
-        logo: `${SITE.url}/opengraph-image`,
+        logo: `${SITE.url}/og.png`,
         description: SITE.description,
         founder: {
           "@type": "Person",

@@ -1,12 +1,12 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "NEXA · Consultoría para dueños de negocios";
-export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default async function Image() {
-  return new ImageResponse(
+const SIZE = { width: 1200, height: 630 };
+
+export async function GET() {
+  const image = new ImageResponse(
     (
       <div
         style={{
@@ -133,6 +133,13 @@ export default async function Image() {
         </div>
       </div>
     ),
-    { ...size },
+    { ...SIZE },
   );
+
+  image.headers.set(
+    "Cache-Control",
+    "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800",
+  );
+  image.headers.set("Content-Type", "image/png");
+  return image;
 }
