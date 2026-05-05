@@ -30,7 +30,7 @@ export function FinalCTA() {
 
           <div className="mt-10 flex flex-col items-center gap-4">
             <CTAButton size="lg" location="final">
-              Agendá una llamada
+              Quiero ordenar mi negocio
             </CTAButton>
             <div className="flex flex-col items-center gap-1 text-sm text-muted-dim">
               <p>30 min · Sin costo · Sin compromiso</p>

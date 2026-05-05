@@ -56,7 +56,7 @@ export function Process() {
 
         <div className="mt-12 flex justify-center">
           <CTAButton size="lg" location="process">
-            Agendá una llamada
+            Reservar mi llamada
           </CTAButton>
         </div>
       </div>

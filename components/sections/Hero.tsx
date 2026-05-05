@@ -38,7 +38,7 @@ export function Hero() {
 
           <div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
             <CTAButton size="lg" location="hero">
-              Agendá una llamada
+              Hablemos de tu negocio
             </CTAButton>
             <a
               href="#solucion"

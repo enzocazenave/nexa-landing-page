@@ -68,6 +68,7 @@ export const trackEventOncePerSession = (
 export type CTALocation =
   | "nav"
   | "hero"
+  | "problem"
   | "solution"
   | "process"
   | "offer"

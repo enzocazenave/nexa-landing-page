@@ -13,7 +13,7 @@ export function Navbar() {
           <span className="text-nexa-teal">.</span>
         </a>
         <CTAButton size="md" location="nav">
-          Agendá una llamada
+          Hablemos
         </CTAButton>
       </div>
     </header>
