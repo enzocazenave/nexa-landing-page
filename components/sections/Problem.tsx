@@ -4,32 +4,32 @@ import { SectionTag } from "../ui/SectionTag";
 const PROBLEMS = [
   {
     n: "01",
-    title: "Falta de claridad",
+    title: "Todo depende de vos",
     bullets: [
-      "No sabés con certeza de dónde vienen los resultados",
-      "No tenés visibilidad real de la rentabilidad",
-      "Las decisiones se toman por intuición",
-      "No es claro qué está frenando el crecimiento",
+      "Cada decisión vuelve a tu escritorio",
+      "Si parás un día, el negocio se frena",
+      "El equipo te consulta hasta lo más chico",
+      "No podés irte tranquilo ni un fin de semana",
     ],
   },
   {
     n: "02",
-    title: "Negocio apagando incendios",
+    title: "Datos por todos lados, claridad cero",
     bullets: [
-      "Todo pasa por tus manos",
-      "El día se va resolviendo urgencias",
-      "Los procesos no están definidos",
-      "Cuando no estás, el negocio se frena",
+      "Tenés números, pero no sabés cuáles mirar",
+      "No tenés visibilidad real de la rentabilidad",
+      "Las decisiones terminan saliendo por intuición",
+      "Sospechás que estás perdiendo plata, pero no sabés dónde",
     ],
   },
   {
     n: "03",
-    title: "Sin foco ni prioridades",
+    title: "Apagando incendios todo el día",
     bullets: [
-      "Hay muchas cosas importantes a la vez",
-      "No es claro qué mover primero",
-      "Se trabaja mucho sin saber qué impacta más",
-      "El esfuerzo no se traduce en crecimiento",
+      "El día se va resolviendo urgencias ajenas",
+      "Lo importante siempre queda para mañana",
+      "Trabajás más que nunca y no sentís que avanzás",
+      "Hay 10 prioridades y no sabés por dónde empezar",
     ],
   },
 ];
@@ -41,13 +41,13 @@ export function Problem() {
         <div className="max-w-2xl">
           <SectionTag>Si te suena familiar</SectionTag>
           <h2 className="heading-display mt-5 text-3xl sm:text-5xl">
-            Mucho esfuerzo, mucho ruido y la sensación de estar siempre
-            apagando incendios.
+            Si te suena familiar,{" "}
+            <span className="text-gradient">no estás solo.</span>
           </h2>
           <p className="mt-5 text-muted-soft sm:text-lg">
-            El problema casi nunca es la falta de trabajo. Es no tener claridad
-            sobre qué está moviendo el negocio y qué solo te está consumiendo
-            energía.
+            La mayoría de los negocios que crecen pasan por acá. El problema
+            casi nunca es la falta de trabajo. Es no tener claridad sobre qué
+            está moviendo el negocio y qué solo te está consumiendo energía.
           </p>
         </div>
 

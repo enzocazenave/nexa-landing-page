@@ -1,6 +1,12 @@
 import { CTAButton } from "../ui/CTAButton";
 import { SectionTag } from "../ui/SectionTag";
 
+const PILLARS = [
+  { k: "Diagnóstico", v: "Entendemos qué está pasando" },
+  { k: "Orden", v: "Definimos prioridades reales" },
+  { k: "Foco", v: "Enfocamos en lo que mueve el negocio" },
+];
+
 export function Hero() {
   return (
     <section
@@ -20,13 +26,14 @@ export function Hero() {
           <h1 className="heading-display mt-6 text-[2.6rem] leading-[1.05] sm:text-6xl lg:text-7xl">
             Tu negocio crece.
             <br />
-            Pero <span className="text-gradient">no sabés qué lo está moviendo.</span>
+            Pero la cabeza{" "}
+            <span className="text-gradient">no para nunca.</span>
           </h1>
 
           <p className="mt-6 max-w-2xl text-base text-muted-soft sm:text-lg sm:leading-relaxed">
             Te ayudamos a entender qué está pasando en tu negocio, ordenar
-            prioridades y enfocar el esfuerzo en lo que realmente genera
-            resultados.
+            prioridades y enfocar el esfuerzo en lo que realmente mueve los
+            resultados. Para dueños que están creciendo desordenados.
           </p>
 
           <div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
@@ -41,9 +48,30 @@ export function Hero() {
             </a>
           </div>
 
-          <p className="mt-4 text-sm text-muted-dim">
-            30 minutos · Sin costo · Sin compromiso
-          </p>
+          <div className="mt-5 flex flex-col gap-1 text-sm text-muted-dim sm:flex-row sm:items-center sm:gap-3">
+            <span>30 min · Sin costo · Sin compromiso</span>
+            <span className="hidden text-nexa-teal/60 sm:inline">·</span>
+            <span>Te llevás claridad, decidas o no avanzar</span>
+          </div>
+        </div>
+
+        <div className="mx-auto mt-14 grid max-w-4xl gap-3 sm:mt-20 sm:grid-cols-3 sm:gap-4">
+          {PILLARS.map((p, i) => (
+            <div
+              key={p.k}
+              className="group relative overflow-hidden rounded-2xl border border-white/[0.06] bg-white/[0.02] p-5 transition hover:border-nexa-teal/30 sm:p-6"
+            >
+              <div className="flex items-center gap-3">
+                <span className="font-display text-sm font-bold text-nexa-teal/80">
+                  0{i + 1}
+                </span>
+                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-nexa-tealGlow">
+                  {p.k}
+                </span>
+              </div>
+              <p className="mt-3 text-base font-medium text-white">{p.v}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
