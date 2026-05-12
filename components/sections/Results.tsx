@@ -13,37 +13,58 @@ export function Results() {
           </h2>
         </div>
 
-        <div className="mt-12">
-          {content.resultados.items.map((r) => (
-            <div key={r.title} className="mb-6">
-              <GradientCard withEdge={false} className="p-6">
-                <div className="flex items-start justify-between gap-6 sm:gap-4">
-                  <div className="max-w-xl">
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-nexa-teal">
-                      {r.rubro}
-                    </p>
-                    <h3 className="mt-2 text-xl font-bold text-white">{r.title}</h3>
-                    {r.paragraphs.map((p, i) => (
-                      <p key={i} className="mt-3 text-sm text-muted-soft">
+        <div className="mt-12 space-y-6">
+          {content.resultados.items.map((r, idx) => (
+            <GradientCard key={r.title} withEdge className="p-6 sm:p-8">
+              <div className="flex items-center gap-4">
+                <span className="font-display text-2xl font-bold text-nexa-teal/60 tabular-nums">
+                  0{idx + 1}
+                </span>
+                <div className="h-px flex-1 bg-gradient-to-r from-nexa-teal/30 to-transparent" />
+                <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-nexa-teal">
+                  {r.rubro}
+                </p>
+              </div>
+
+              <h3 className="mt-4 text-2xl font-bold text-white sm:text-3xl">
+                {r.title}
+              </h3>
+
+              <div className="mt-6 grid gap-8 lg:grid-cols-[1.4fr_1fr]">
+                <div className="space-y-5">
+                  {r.paragraphs.map((p, i) => (
+                    <div key={i}>
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-soft/70">
+                        {i === 0 ? "Situación" : "Lo que hicimos"}
+                      </p>
+                      <p className="mt-2 text-sm text-muted-soft sm:text-[15px] leading-relaxed">
                         {p}
                       </p>
-                    ))}
-
-                    <div className="mt-4 flex gap-3 flex-wrap">
-                      {r.metrics.map((m) => (
-                        <div key={m} className="rounded-md border border-nexa-teal/20 bg-nexa-teal/[0.06] px-3 py-1 text-sm font-semibold text-nexa-tealGlow">
-                          {m}
-                        </div>
-                      ))}
                     </div>
-
-                    <div className="mt-4 border-l-2 border-nexa-teal pl-4 text-sm italic text-muted-soft">
-                      {r.quote}
-                    </div>
-                  </div>
+                  ))}
                 </div>
-              </GradientCard>
-            </div>
+
+                <div className="flex flex-col gap-3">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-nexa-teal">
+                    Resultado
+                  </p>
+                  {r.metrics.map((m) => (
+                    <div
+                      key={m}
+                      className="rounded-lg border border-nexa-teal/25 bg-nexa-teal/[0.06] px-4 py-3 text-sm font-semibold text-nexa-tealGlow sm:text-base"
+                    >
+                      {m}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-6 border-t border-white/5 pt-5">
+                <p className="text-sm italic text-muted-soft sm:text-base">
+                  {r.quote}
+                </p>
+              </div>
+            </GradientCard>
           ))}
         </div>
       </div>
