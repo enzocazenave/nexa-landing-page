@@ -6,7 +6,7 @@ export function Authority() {
   return (
     <section id="juampi" className="relative py-16 sm:py-20">
       <div className="container-nexa">
-        <div className="mx-auto grid max-w-4xl items-center gap-8 sm:grid-cols-[auto_1fr]">
+        <div className="mx-auto grid max-w-4xl items-start gap-8 sm:grid-cols-[auto_1fr]">
             <div className="relative h-32 w-32 shrink-0 overflow-hidden rounded-2xl border border-white/[0.08] sm:h-36 sm:w-36">
               <Image
                 src={content.quien.photo?.src ?? "/juampi.jpeg"}

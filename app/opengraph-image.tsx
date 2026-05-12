@@ -195,7 +195,7 @@ export default async function Image() {
                   letterSpacing: '0.02em',
                 }}
               >
-                {content.quien.name ?? 'Juan Pablo Garay'} · {content.quien.tag ?? 'Fundador'}
+                Juan Pablo Garay · {content.quien.tag}
               </div>
             </div>
               <div
