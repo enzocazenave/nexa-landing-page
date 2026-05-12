@@ -8,12 +8,12 @@ export function Footer() {
           <span>{content.footer.brand.replace(/\.$/, "")}</span>
           <span className="text-nexa-teal">.</span>
         </div>
-        <p>© {new Date().getFullYear()} {content.footer.brand.replace(/\.$/, "")} · {content.quien.name ?? "Juan Pablo Garay"}</p>
+        <p>{content.footer.copyright}</p>
         <a
-          href="mailto:hola@nexa.consulting"
+          href={`mailto:${content.footer.email}`}
           className="hover:text-nexa-tealGlow"
         >
-          hola@nexa.consulting
+          {content.footer.email}
         </a>
       </div>
     </footer>

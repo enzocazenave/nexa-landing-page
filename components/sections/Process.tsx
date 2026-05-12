@@ -6,9 +6,14 @@ export function Process() {
   return (
     <section id="proceso" className="relative py-20 sm:py-28">
       <div className="container-nexa">
-        <div className="text-center">
-          <SectionTag className="justify-center">{content.llamada ? "El primer paso" : "El primer paso"}</SectionTag>
-          <h2 className="heading-display mt-5 text-3xl sm:text-5xl">La llamada</h2>
+        <div className="mx-auto max-w-2xl text-center">
+          <SectionTag className="justify-center">{content.llamada.label}</SectionTag>
+          <h2 className="heading-display mt-5 text-3xl sm:text-5xl">{content.llamada.title}</h2>
+          <div className="mt-6 space-y-4 text-muted-soft sm:text-lg">
+            {content.llamada.introParagraphs.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </div>
         </div>
 
         <div className="relative mt-14 grid gap-8 sm:grid-cols-3">

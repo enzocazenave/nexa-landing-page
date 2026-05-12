@@ -9,55 +9,63 @@ export const content = {
     learnMore: "¿Cómo trabajamos?",
   },
 
-  problemas: [
-    {
-      num: "01",
-      title: "Todo depende de vos",
-      bullets: [
-        "Si no estás, el negocio frena",
-        "Cada decisión vuelve a tu escritorio",
-        "Trabajás adentro todo el día y no tenés tiempo para pensar en él",
-      ],
-    },
-    {
-      num: "02",
-      title: "No sabés si ganás o perdés",
-      bullets: [
-        "Facturás, pero no entendés adónde fue la plata",
-        "Tomás decisiones con lo que hay en la cuenta",
-        "Sospechás que algo no cierra, pero no sabés dónde",
-      ],
-    },
-    {
-      num: "03",
-      title: "El día a día te consume",
-      bullets: [
-        "El día se va resolviendo urgencias",
-        "Trabajás más que nunca y no sentís que avanzás",
-        "Nunca tenés tiempo para mirar el negocio desde afuera",
-      ],
-    },
-    {
-      num: "04",
-      title: "Objetivos que nunca se cumplen",
-      bullets: [
-        "Arrancan el año con metas y a los 3 meses nadie sabe dónde quedaron",
-        "No hay forma de saber si están avanzando",
-        "Mucho esfuerzo sin saber si va adonde importa",
-      ],
-    },
-    {
-      num: "05",
-      title: "No sabés qué te diferencia",
-      bullets: [
-        "Sabés lo que vendés, pero no por qué te eligen a vos",
-        "No podés explicar qué resolvés mejor que el resto",
-        "Tu sistema comercial funciona, pero no sabés cómo ni por qué",
-      ],
-    },
-  ],
+  problemas: {
+    label: "Si te suena familiar",
+    title: "No estás solo.",
+    intro:
+      "La mayoría de los negocios que crecen pasan por acá. El problema casi nunca es falta de trabajo.",
+    items: [
+      {
+        num: "01",
+        title: "Todo depende de vos",
+        bullets: [
+          "Si no estás, el negocio frena",
+          "Cada decisión vuelve a tu escritorio",
+          "Trabajás adentro todo el día y no tenés tiempo para pensar en él",
+        ],
+      },
+      {
+        num: "02",
+        title: "No sabés si ganás o perdés",
+        bullets: [
+          "Facturás, pero no entendés adónde fue la plata",
+          "Tomás decisiones con lo que hay en la cuenta",
+          "Sospechás que algo no cierra, pero no sabés dónde",
+        ],
+      },
+      {
+        num: "03",
+        title: "El día a día te consume",
+        bullets: [
+          "El día se va resolviendo urgencias",
+          "Trabajás más que nunca y no sentís que avanzás",
+          "Nunca tenés tiempo para mirar el negocio desde afuera",
+        ],
+      },
+      {
+        num: "04",
+        title: "Objetivos que nunca se cumplen",
+        bullets: [
+          "Arrancan el año con metas y a los 3 meses nadie sabe dónde quedaron",
+          "No hay forma de saber si están avanzando",
+          "Mucho esfuerzo sin saber si va adonde importa",
+        ],
+      },
+      {
+        num: "05",
+        title: "No sabés qué te diferencia",
+        bullets: [
+          "Sabés lo que vendés, pero no por qué te eligen a vos",
+          "No podés explicar qué resolvés mejor que el resto",
+          "Tu sistema comercial funciona, pero no sabés cómo ni por qué",
+        ],
+      },
+    ],
+  },
 
   quien: {
+    label: "El equipo detrás de NEXA",
+    title: "Quién está del otro lado",
     tag: "Fundador",
     name: "Juan Pablo Garay",
     photo: { src: "/juampi.jpeg", alt: "Juan Pablo Garay — Fundador de NEXA" },
@@ -83,78 +91,102 @@ export const content = {
     },
   },
 
-  resultados: [
-    {
-      rubro: "Concesionaria de autos",
-      title: "DeMartín Garage",
-      paragraphs: [
-        "Llegó convencido de que el problema era el contexto. La economía, el mercado, la coyuntura. Mientras tanto, la deuda crecía y la liquidez caía. No había registro de gastos, no había segmentación de vehículos, no había sistema comercial.",
-        "Segmentamos el inventario por margen y rotación, mapeamos el estado de deuda y enfocamos la venta en los vehículos de mayor margen y menor tiempo en stock.",
-      ],
-      metrics: ["Deuda ↓ 70% en 4 meses", "Sin vender más — vendiendo mejor"],
-      quote:
-        '"Antes no teníamos control de nada. Hoy tenemos un sistema integrado. Entendemos cómo funciona el negocio y tomamos mejores decisiones."',
-    },
-    {
-      rubro: "Hardware y reparación de PC",
-      title: "PCFIX",
-      paragraphs: [
-        "Cinco años en el mercado. Un mes antes de cerrar. El negocio facturaba, pero nadie sabía si era rentable. Sin punto de equilibrio definido, sin caja para cubrir los gastos del mes.",
-        "Ordenamos la información, construimos reportes en tiempo real y diseñamos una estrategia para generar caja de seguridad.",
-      ],
-      metrics: ["3× la caja mínima en 90 días", "+3 meses de gastos cubiertos"],
-      quote:
-        '"Pasé de 5 años de desorden a tener claridad, control y proyección en pocos meses."',
-    },
-    {
-      rubro: "Indumentaria femenina",
-      title: "Alma by Lola",
-      paragraphs: [
-        "Años en el negocio sin saber qué le convenía vender. Todo vivía en su cabeza y en blocs de notas. Capital inmovilizado en stock que no rotaba. Canales de venta activos sin saber cuál convertía.",
-        "Medimos cada canal, definimos posicionamiento y propuesta de valor, y liquidamos el stock parado para recuperar capital.",
-      ],
-      metrics: ["Facturación récord en 2 meses", "Mejor mes en 10 meses"],
-      quote: '"Nunca antes había visto con tanta claridad qué estaba pasando, qué funcionaba y qué no."',
-    },
-  ],
+  resultados: {
+    label: "Resultados reales",
+    title: "Lo que cambia cuando hay diagnóstico, orden y foco.",
+    items: [
+      {
+        rubro: "Concesionaria de autos",
+        title: "DeMartín Garage",
+        paragraphs: [
+          "Llegó convencido de que el problema era el contexto. La economía, el mercado, la coyuntura. Mientras tanto, la deuda crecía y la liquidez caía. No había registro de gastos, no había segmentación de vehículos, no había sistema comercial.",
+          "Segmentamos el inventario por margen y rotación, mapeamos el estado de deuda y enfocamos la venta en los vehículos de mayor margen y menor tiempo en stock.",
+        ],
+        metrics: ["Deuda ↓ 70% en 4 meses", "Sin vender más — vendiendo mejor"],
+        quote:
+          '"Antes no teníamos control de nada. Hoy tenemos un sistema integrado. Entendemos cómo funciona el negocio y tomamos mejores decisiones."',
+      },
+      {
+        rubro: "Hardware y reparación de PC",
+        title: "PCFIX",
+        paragraphs: [
+          "Cinco años en el mercado. Un mes antes de cerrar. El negocio facturaba, pero nadie sabía si era rentable. Sin punto de equilibrio definido, sin caja para cubrir los gastos del mes.",
+          "Ordenamos la información, construimos reportes en tiempo real y diseñamos una estrategia para generar caja de seguridad.",
+        ],
+        metrics: ["3× la caja mínima en 90 días", "+3 meses de gastos cubiertos"],
+        quote:
+          '"Pasé de 5 años de desorden a tener claridad, control y proyección en pocos meses."',
+      },
+      {
+        rubro: "Indumentaria femenina",
+        title: "Alma by Lola",
+        paragraphs: [
+          "Años en el negocio sin saber qué le convenía vender. Todo vivía en su cabeza y en blocs de notas. Capital inmovilizado en stock que no rotaba. Canales de venta activos sin saber cuál convertía.",
+          "Medimos cada canal, definimos posicionamiento y propuesta de valor, y liquidamos el stock parado para recuperar capital.",
+        ],
+        metrics: ["Facturación récord en 2 meses", "Mejor mes en 10 meses"],
+        quote: '"Nunca antes había visto con tanta claridad qué estaba pasando, qué funcionaba y qué no."',
+      },
+    ],
+  },
 
   metodologia: {
+    label: "Cómo trabajamos",
+    title: "Antes de proponer soluciones, entendemos qué está pasando.",
     intro: "Eso es lo que cambia todo.",
     steps: [
       {
         num: "01",
         title: "Diagnóstico",
         desc: "Entramos al negocio y lo leemos de punta a punta. Identificamos qué está moviendo los resultados y qué solo está consumiendo energía.",
-        bullets: [
-          "Lectura del negocio de punta a punta",
-          "Identificación de qué está frenando el crecimiento",
-          "Detección de las variables de mayor impacto",
-          "Hipótesis claras sobre dónde están las oportunidades",
-        ],
       },
       {
         num: "02",
         title: "Orden y prioridades",
         desc: "Definimos qué mover primero. No todo tiene el mismo impacto — el foco va donde realmente importa.",
-        bullets: [
-          "Definición de qué decisiones generan impacto real",
-          "Criterios claros para priorizar",
-          "Foco puesto donde el negocio lo necesita",
-          "Lo importante separado del ruido",
-        ],
       },
       {
         num: "03",
         title: "Ejecución y seguimiento",
         desc: "Implementamos, medimos y ajustamos. La claridad sin acción no cambia nada.",
-        bullets: [
-          "Decisiones basadas en información, no en suposiciones",
-          "Esfuerzo enfocado en lo que mueve la aguja",
-          "Menos depender de tu energía constante",
-          "Una dirección clara de adónde va el negocio",
-        ],
       },
     ],
+  },
+
+  fit: {
+    label: "¿Es para vos?",
+    title: "No trabajamos con todos.",
+    intro:
+      "No porque seamos selectivos por capricho — sino porque para que esto funcione, tiene que haber condiciones mínimas de ambos lados.",
+    siHeading: "Tiene sentido si…",
+    si: [
+      "Tu negocio ya funciona y factura, pero sentís que algo no cierra",
+      "Estás dispuesto a mirar el negocio con honestidad",
+      "Entendés que ordenar un negocio lleva tiempo y trabajo — tuyo también",
+      "Querés entender qué está pasando antes de seguir tomando decisiones",
+    ],
+    noHeading: "No tiene sentido si…",
+    no: [
+      "Estás recién arrancando y todavía no tenés clientes ni estructura",
+      "Esperás resultados en menos de un mes",
+      "No estás dispuesto a cambiar cómo tomás decisiones hoy",
+      "Buscás alguien que resuelva todo sin que vos te involucres",
+    ],
+  },
+
+  llamada: {
+    label: "El primer paso",
+    title: "La llamada",
+    introParagraphs: [
+      "45 minutos para que puedas contarnos todo. Sin apuro, sin filtro. No es una llamada de ventas — es una conversación para entender qué está pasando en tu negocio hoy.",
+      "Si al final tiene sentido seguir, te contamos cómo podríamos trabajar juntos.",
+    ],
+    steps: [
+      { num: "01", title: "Agendás la llamada", desc: "Elegís el horario que mejor te queda. 45 minutos, sin costo." },
+      { num: "02", title: "Hablamos de tu negocio", desc: "Entendemos qué está pasando hoy y dónde están los puntos críticos." },
+      { num: "03", title: "Ves si tiene sentido seguir", desc: "Si encaja para los dos, te contamos cómo podríamos trabajar juntos." },
+    ],
+    cta: { text: "Quiero ordenar mi negocio →", href: "#" },
   },
 
   sticky: {
@@ -170,34 +202,6 @@ export const content = {
     ],
   },
 
-  fit: {
-    si: [
-      "Tu negocio ya funciona y factura, pero sentís que algo no cierra",
-      "Estás dispuesto a mirar el negocio con honestidad",
-      "Entendés que ordenar un negocio lleva tiempo y trabajo — tuyo también",
-      "Querés entender qué está pasando antes de seguir tomando decisiones",
-    ],
-    no: [
-      "Estás recién arrancando y todavía no tenés clientes ni estructura",
-      "Esperás resultados en menos de un mes",
-      "No estás dispuesto a cambiar cómo tomás decisiones hoy",
-      "Buscás alguien que resuelva todo sin que vos te involucres",
-    ],
-  },
-
-  llamada: {
-    introParagraphs: [
-      "45 minutos para que puedas contarnos todo. Sin apuro, sin filtro. No es una llamada de ventas — es una conversación para entender qué está pasando en tu negocio hoy.",
-      "Si al final tiene sentido seguir, te contamos cómo podríamos trabajar juntos.",
-    ],
-    steps: [
-      { num: "01", title: "Agendás la llamada", desc: "Elegís el horario que mejor te queda. 45 minutos, sin costo." },
-      { num: "02", title: "Hablamos de tu negocio", desc: "Entendemos qué está pasando hoy y dónde están los puntos críticos." },
-      { num: "03", title: "Ves si tiene sentido seguir", desc: "Si encaja para los dos, te contamos cómo podríamos trabajar juntos." },
-    ],
-    cta: { text: "Quiero ordenar mi negocio →", href: "#" },
-  },
-
   ctaFinal: {
     title: "Hablemos de tu negocio.",
     paragraph:
@@ -209,6 +213,7 @@ export const content = {
   footer: {
     brand: "NEXA.",
     copyright: "© 2026 NEXA · hola@nexa.consulting",
+    email: "hola@nexa.consulting",
   },
 };
 

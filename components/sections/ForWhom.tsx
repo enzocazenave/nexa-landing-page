@@ -6,20 +6,18 @@ export function ForWhom() {
     <section id="para-quien" className="relative py-20 sm:py-28">
       <div className="container-nexa">
         <div className="max-w-2xl">
-          <SectionTag>¿Es para vos?</SectionTag>
+          <SectionTag>{content.fit.label}</SectionTag>
           <h2 className="heading-display mt-5 text-3xl sm:text-5xl">
-            Trabajamos con dueños que quieren{" "}
-            <span className="text-gradient">
-              entender qué está pasando en su negocio.
-            </span>
+            <span className="text-gradient">{content.fit.title}</span>
           </h2>
+          <p className="mt-5 text-muted-soft sm:text-lg">{content.fit.intro}</p>
         </div>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
           <div className="rounded-2xl border border-nexa-teal/25 bg-nexa-teal/[0.04] p-6 sm:p-8">
             <h3 className="flex items-center gap-3 text-lg font-semibold text-white">
               <span className="text-nexa-tealGlow">✓</span>
-              Tiene sentido si…
+              {content.fit.siHeading}
             </h3>
             <ul className="mt-5 space-y-3">
               {content.fit.si.map((t) => (
@@ -39,7 +37,7 @@ export function ForWhom() {
           <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-8">
             <h3 className="flex items-center gap-3 text-lg font-semibold text-white">
               <span className="text-muted">✕</span>
-              No tiene sentido si…
+              {content.fit.noHeading}
             </h3>
             <ul className="mt-5 space-y-3">
               {content.fit.no.map((t) => (

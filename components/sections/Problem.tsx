@@ -7,19 +7,17 @@ export function Problem() {
     <section id="problema" className="relative py-20 sm:py-28">
       <div className="container-nexa">
         <div className="max-w-2xl">
-          <SectionTag>Si te suena familiar</SectionTag>
+          <SectionTag>{content.problemas.label}</SectionTag>
           <h2 className="heading-display mt-5 text-3xl sm:text-5xl">
-            Si te suena familiar, <span className="text-gradient">no estás solo.</span>
+            <span className="text-gradient">{content.problemas.title}</span>
           </h2>
           <p className="mt-5 text-muted-soft sm:text-lg">
-            La mayoría de los negocios que crecen pasan por acá. El problema
-            casi nunca es la falta de trabajo. Es no tener claridad sobre qué
-            está moviendo el negocio y qué solo te está consumiendo energía.
+            {content.problemas.intro}
           </p>
         </div>
 
         <div className="mt-12 grid gap-5 lg:grid-cols-3">
-          {content.problemas.map((p) => (
+          {content.problemas.items.map((p) => (
             <GradientCard key={p.num} withEdge={false} className="flex flex-col">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-semibold uppercase tracking-[0.2em] text-nexa-teal">

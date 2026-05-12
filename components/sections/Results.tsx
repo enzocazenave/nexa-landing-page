@@ -7,14 +7,14 @@ export function Results() {
     <section id="resultados" className="relative py-20 sm:py-28">
       <div className="container-nexa">
         <div className="max-w-2xl">
-          <SectionTag>Resultados reales</SectionTag>
+          <SectionTag>{content.resultados.label}</SectionTag>
           <h2 className="heading-display mt-5 text-3xl sm:text-5xl">
-            Lo que cambia cuando hay diagnóstico, orden y foco.
+            {content.resultados.title}
           </h2>
         </div>
 
         <div className="mt-12">
-          {content.resultados.map((r) => (
+          {content.resultados.items.map((r) => (
             <div key={r.title} className="mb-6">
               <GradientCard withEdge={false} className="p-6">
                 <div className="flex items-start justify-between gap-6 sm:gap-4">

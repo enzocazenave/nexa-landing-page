@@ -2,18 +2,18 @@ import { SectionTag } from "../ui/SectionTag";
 import content from "@/lib/content";
 
 export function Timeline() {
-  const blocks = content.metodologia?.steps || [];
+  const blocks = content.metodologia.steps;
 
   return (
     <section id="proceso-trabajo" className="relative py-20 sm:py-28">
       <div className="container-nexa">
         <div className="max-w-2xl">
-          <SectionTag>Cómo trabajamos</SectionTag>
+          <SectionTag>{content.metodologia.label}</SectionTag>
           <h2 className="heading-display mt-5 text-3xl sm:text-5xl">
-            Antes de proponer soluciones, entendemos qué está pasando.
+            {content.metodologia.title}
           </h2>
           <p className="mt-5 text-muted-soft sm:text-lg">
-            {content.metodologia?.intro}
+            {content.metodologia.intro}
           </p>
         </div>
 
