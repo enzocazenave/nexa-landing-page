@@ -4,7 +4,7 @@ export const content = {
     title: "¿Cuándo fue la última vez que entendiste de verdad <em>qué está moviendo</em> tu negocio?",
     subtitle:
       "No lo que creés. Lo que realmente está pasando.\nEntramos al negocio, lo leemos de punta a punta, y te decimos exactamente dónde está el problema y qué mover primero.",
-    cta: "Agendá tu llamada gratis →",
+    cta: "Agendá tu llamada gratis",
     meta: ["45 minutos", "Sin costo", "Sin compromiso"],
     learnMore: "¿Cómo trabajamos?",
   },
