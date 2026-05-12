@@ -59,6 +59,7 @@ export const content = {
 
   quien: {
     tag: "Fundador",
+    name: "Juan Pablo Garay",
     photo: { src: "/juampi.jpeg", alt: "Juan Pablo Garay — Fundador de NEXA" },
     paragraphs: [
       "Durante 8 años trabajé en finanzas corporativas. Viajé, crecí, aprendí herramientas y formas de leer un negocio que pocas veces llegan al mundo PyME.",
