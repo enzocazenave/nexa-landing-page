@@ -186,7 +186,7 @@ export const content = {
       { num: "02", title: "Hablamos de tu negocio", desc: "Entendemos qué está pasando hoy y dónde están los puntos críticos." },
       { num: "03", title: "Ves si tiene sentido seguir", desc: "Si encaja para los dos, te contamos cómo podríamos trabajar juntos." },
     ],
-    cta: { text: "Quiero ordenar mi negocio →", href: "#" },
+    cta: { text: "Quiero ordenar mi negocio", href: "#" },
   },
 
   sticky: {
@@ -206,7 +206,7 @@ export const content = {
     title: "Hablemos de tu negocio.",
     paragraph:
       "Si sentís que algo no cierra, que trabajás mucho sin ver los resultados que esperás, o simplemente querés entender qué está pasando realmente — esta llamada es para vos.",
-    cta: { text: "Quiero ordenar mi negocio →", href: "#" },
+    cta: { text: "Quiero ordenar mi negocio", href: "#" },
     meta: "45 minutos · Sin costo · Sin compromiso",
   },
 
