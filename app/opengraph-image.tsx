@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/og'
+import content from '@/lib/content'
 
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
@@ -194,10 +195,10 @@ export default async function Image() {
                   letterSpacing: '0.02em',
                 }}
               >
-                Juan Pablo Garay · Founder
+                {content.quien.name ?? 'Juan Pablo Garay'} · {content.quien.tag ?? 'Fundador'}
               </div>
             </div>
-            <div
+              <div
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -212,7 +213,7 @@ export default async function Image() {
                 letterSpacing: '-0.01em',
               }}
             >
-              Agendá una llamada
+              {content.hero.cta ?? 'Agendá una llamada'}
             </div>
           </div>
         </div>

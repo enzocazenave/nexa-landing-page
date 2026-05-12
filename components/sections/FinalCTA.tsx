@@ -1,4 +1,5 @@
 import { CTAButton } from "../ui/CTAButton";
+import content from "@/lib/content";
 
 export function FinalCTA() {
   return (
@@ -19,22 +20,16 @@ export function FinalCTA() {
       <div className="container-nexa">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="heading-display text-4xl leading-tight sm:text-6xl">
-            Hablemos de{" "}
-            <span className="text-gradient">tu negocio.</span>
+            {content.ctaFinal.title}
           </h2>
-          <p className="mt-6 text-muted-soft sm:text-lg">
-            30 minutos para entender qué está pasando hoy, dónde están las
-            oportunidades y qué tendría sentido mover primero. Sin venta, sin
-            presión.
-          </p>
+          <p className="mt-6 text-muted-soft sm:text-lg">{content.ctaFinal.paragraph}</p>
 
           <div className="mt-10 flex flex-col items-center gap-4">
             <CTAButton size="lg" location="final">
-              Quiero ordenar mi negocio
+              {content.ctaFinal.cta.text}
             </CTAButton>
             <div className="flex flex-col items-center gap-1 text-sm text-muted-dim">
-              <p>30 min · Sin costo · Sin compromiso</p>
-              <p>Te llevás claridad sobre tu negocio, decidas o no avanzar.</p>
+              <p>{content.ctaFinal.meta}</p>
             </div>
           </div>
         </div>

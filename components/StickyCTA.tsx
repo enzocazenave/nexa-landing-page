@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { CTAButton } from "./ui/CTAButton";
+import content from "@/lib/content";
 
 export function StickyCTA() {
   const [show, setShow] = useState(false);
@@ -27,7 +28,7 @@ export function StickyCTA() {
         location="sticky-mobile"
         className="w-full justify-center"
       >
-        Hablemos de tu negocio
+        {content.sticky.cta}
       </CTAButton>
     </div>
   );

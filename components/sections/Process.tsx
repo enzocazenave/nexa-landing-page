@@ -1,33 +1,14 @@
 import { CTAButton } from "../ui/CTAButton";
 import { SectionTag } from "../ui/SectionTag";
-
-const STEPS = [
-  {
-    n: 1,
-    title: "Agendás la llamada",
-    body: "30 minutos, sin costo ni compromiso, para hablar de tu negocio.",
-  },
-  {
-    n: 2,
-    title: "Entendemos qué está pasando",
-    body: "Conversamos sobre cómo está hoy el negocio y dónde están las trabas.",
-  },
-  {
-    n: 3,
-    title: "Vemos si tiene sentido seguir",
-    body: "Si encaja para los dos, te contamos cómo podríamos avanzar.",
-  },
-];
+import content from "@/lib/content";
 
 export function Process() {
   return (
     <section id="proceso" className="relative py-20 sm:py-28">
       <div className="container-nexa">
         <div className="text-center">
-          <SectionTag className="justify-center">El primer paso</SectionTag>
-          <h2 className="heading-display mt-5 text-3xl sm:text-5xl">
-            Así arrancamos
-          </h2>
+          <SectionTag className="justify-center">{content.llamada ? "El primer paso" : "El primer paso"}</SectionTag>
+          <h2 className="heading-display mt-5 text-3xl sm:text-5xl">La llamada</h2>
         </div>
 
         <div className="relative mt-14 grid gap-8 sm:grid-cols-3">
@@ -39,24 +20,20 @@ export function Process() {
                 "linear-gradient(90deg, transparent 0%, rgba(45,212,191,0.4) 20%, rgba(59,130,246,0.4) 50%, rgba(45,212,191,0.4) 80%, transparent 100%)",
             }}
           />
-          {STEPS.map((s) => (
-            <div key={s.n} className="relative text-center">
+          {content.llamada.steps.map((s) => (
+            <div key={s.num} className="relative text-center">
               <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-nexa-teal/40 bg-ink-900 text-lg font-bold text-white shadow-glowSoft">
-                {s.n}
+                {s.num}
               </div>
-              <h3 className="mt-5 text-lg font-semibold text-white">
-                {s.title}
-              </h3>
-              <p className="mx-auto mt-2 max-w-xs text-sm text-muted-soft">
-                {s.body}
-              </p>
+              <h3 className="mt-5 text-lg font-semibold text-white">{s.title}</h3>
+              <p className="mx-auto mt-2 max-w-xs text-sm text-muted-soft">{s.desc}</p>
             </div>
           ))}
         </div>
 
         <div className="mt-12 flex justify-center">
           <CTAButton size="lg" location="process">
-            Reservar mi llamada
+            {content.llamada.cta.text}
           </CTAButton>
         </div>
       </div>

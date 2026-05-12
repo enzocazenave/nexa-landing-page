@@ -4,15 +4,11 @@ import { Footer } from "@/components/Footer";
 import { AnalyticsTracker } from "@/components/AnalyticsTracker";
 import { Hero } from "@/components/sections/Hero";
 import { Problem } from "@/components/sections/Problem";
-import { Agitation } from "@/components/sections/Agitation";
-import { Solution } from "@/components/sections/Solution";
-import { Timeline } from "@/components/sections/Timeline";
-import { Deliverables } from "@/components/sections/Deliverables";
-import { Results } from "@/components/sections/Results";
-import { ForWhom } from "@/components/sections/ForWhom";
 import { Authority } from "@/components/sections/Authority";
-import { Guarantee } from "@/components/sections/Guarantee";
+import { Results } from "@/components/sections/Results";
+import { Timeline } from "@/components/sections/Timeline";
 import { Process } from "@/components/sections/Process";
+import { ForWhom } from "@/components/sections/ForWhom";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 
 export default function Page() {
@@ -23,14 +19,10 @@ export default function Page() {
       <main>
         <Hero />
         <Problem />
-        <Agitation />
-        <Solution />
-        <Timeline />
-        <Deliverables />
-        <Results />
-        <ForWhom />
         <Authority />
-        <Guarantee />
+        <Results />
+        <Timeline />
+        <ForWhom />
         <Process />
         <FinalCTA />
       </main>

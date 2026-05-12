@@ -1,38 +1,6 @@
 import { GradientCard } from "../ui/GradientCard";
 import { SectionTag } from "../ui/SectionTag";
-
-const PROBLEMS = [
-  {
-    n: "01",
-    title: "Todo depende de vos",
-    bullets: [
-      "Cada decisión vuelve a tu escritorio",
-      "Si parás un día, el negocio se frena",
-      "El equipo te consulta hasta lo más chico",
-      "No podés irte tranquilo ni un fin de semana",
-    ],
-  },
-  {
-    n: "02",
-    title: "Datos por todos lados, claridad cero",
-    bullets: [
-      "Tenés números, pero no sabés cuáles mirar",
-      "No tenés visibilidad real de la rentabilidad",
-      "Las decisiones terminan saliendo por intuición",
-      "Sospechás que estás perdiendo plata, pero no sabés dónde",
-    ],
-  },
-  {
-    n: "03",
-    title: "Apagando incendios todo el día",
-    bullets: [
-      "El día se va resolviendo urgencias ajenas",
-      "Lo importante siempre queda para mañana",
-      "Trabajás más que nunca y no sentís que avanzás",
-      "Hay 10 prioridades y no sabés por dónde empezar",
-    ],
-  },
-];
+import content from "@/lib/content";
 
 export function Problem() {
   return (
@@ -41,8 +9,7 @@ export function Problem() {
         <div className="max-w-2xl">
           <SectionTag>Si te suena familiar</SectionTag>
           <h2 className="heading-display mt-5 text-3xl sm:text-5xl">
-            Si te suena familiar,{" "}
-            <span className="text-gradient">no estás solo.</span>
+            Si te suena familiar, <span className="text-gradient">no estás solo.</span>
           </h2>
           <p className="mt-5 text-muted-soft sm:text-lg">
             La mayoría de los negocios que crecen pasan por acá. El problema
@@ -52,14 +19,14 @@ export function Problem() {
         </div>
 
         <div className="mt-12 grid gap-5 lg:grid-cols-3">
-          {PROBLEMS.map((p) => (
-            <GradientCard key={p.n} withEdge={false} className="flex flex-col">
+          {content.problemas.map((p) => (
+            <GradientCard key={p.num} withEdge={false} className="flex flex-col">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-semibold uppercase tracking-[0.2em] text-nexa-teal">
-                  Problema {p.n}
+                  Problema {p.num}
                 </span>
                 <span className="font-display text-2xl font-bold text-white/15">
-                  {p.n}
+                  {p.num}
                 </span>
               </div>
               <h3 className="mt-4 text-xl font-bold text-white">{p.title}</h3>

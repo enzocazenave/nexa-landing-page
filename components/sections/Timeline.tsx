@@ -1,46 +1,20 @@
 import { SectionTag } from "../ui/SectionTag";
-
-const BLOCKS = [
-  {
-    range: "Etapa 01",
-    title: "Lectura del negocio",
-    items: [
-      "Cómo está funcionando hoy",
-      "Dónde se está perdiendo energía",
-    ],
-  },
-  {
-    range: "Etapa 02",
-    title: "Diagnóstico claro",
-    items: [
-      "Qué está moviendo el negocio",
-      "Qué está frenando el crecimiento",
-    ],
-  },
-  {
-    range: "Etapa 03",
-    title: "Orden y prioridades",
-    items: [
-      "Qué decisiones priorizar",
-      "Dónde poner el foco primero",
-    ],
-  },
-  {
-    range: "Etapa 04",
-    title: "Dirección y seguimiento",
-    items: ["Plan de acción concreto", "Criterios para sostenerlo"],
-  },
-];
+import content from "@/lib/content";
 
 export function Timeline() {
+  const blocks = content.metodologia?.steps || [];
+
   return (
     <section id="proceso-trabajo" className="relative py-20 sm:py-28">
       <div className="container-nexa">
         <div className="max-w-2xl">
-          <SectionTag>El proceso</SectionTag>
+          <SectionTag>Cómo trabajamos</SectionTag>
           <h2 className="heading-display mt-5 text-3xl sm:text-5xl">
-            Un orden claro: del diagnóstico a la acción.
+            Antes de proponer soluciones, entendemos qué está pasando.
           </h2>
+          <p className="mt-5 text-muted-soft sm:text-lg">
+            {content.metodologia?.intro}
+          </p>
         </div>
 
         <div className="relative mt-14">
@@ -53,29 +27,16 @@ export function Timeline() {
             }}
           />
 
-          <div className="grid gap-5 lg:grid-cols-4">
-            {BLOCKS.map((b, i) => (
-              <div key={b.range} className="relative">
+          <div className="grid gap-5 lg:grid-cols-3">
+            {blocks.map((b, i) => (
+              <div key={b.num} className="relative">
                 <div className="mx-auto flex h-[72px] w-[72px] items-center justify-center rounded-full border border-nexa-teal/40 bg-ink-900 text-center shadow-glowSoft lg:mx-0">
-                  <span className="font-display text-lg font-bold text-white">
-                    0{i + 1}
-                  </span>
+                  <span className="font-display text-lg font-bold text-white">{b.num}</span>
                 </div>
                 <div className="mt-5 rounded-xl border border-white/[0.06] bg-white/[0.02] p-5">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-nexa-teal">
-                    {b.range}
-                  </p>
-                  <h3 className="mt-2 text-lg font-semibold text-white">
-                    {b.title}
-                  </h3>
-                  <ul className="mt-3 space-y-1.5 text-sm text-muted-soft">
-                    {b.items.map((it) => (
-                      <li key={it} className="flex items-start gap-2">
-                        <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-nexa-teal/70" />
-                        {it}
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-nexa-teal">Etapa {b.num}</p>
+                  <h3 className="mt-2 text-lg font-semibold text-white">{b.title}</h3>
+                  <p className="mt-3 text-sm text-muted-soft">{b.desc}</p>
                 </div>
               </div>
             ))}

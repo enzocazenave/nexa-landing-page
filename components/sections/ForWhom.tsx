@@ -1,19 +1,5 @@
 import { SectionTag } from "../ui/SectionTag";
-
-const FIT = [
-  "Sos dueño de negocio o founder",
-  "El negocio ya factura y tiene cierta estructura",
-  "Sentís que estás operando más por intuición que por criterio",
-  "Querés entender qué está pasando antes de seguir tomando decisiones",
-  "Estás dispuesto a mirar el negocio con honestidad",
-];
-
-const NOT_FIT = [
-  "Estás recién empezando y todavía no tenés clientes",
-  "Buscás resultados inmediatos sin un diagnóstico previo",
-  "No querés revisar cómo se toman las decisiones hoy",
-  "Buscás una receta estandarizada o fórmula rápida",
-];
+import content from "@/lib/content";
 
 export function ForWhom() {
   return (
@@ -36,7 +22,7 @@ export function ForWhom() {
               Tiene sentido si…
             </h3>
             <ul className="mt-5 space-y-3">
-              {FIT.map((t) => (
+              {content.fit.si.map((t) => (
                 <li
                   key={t}
                   className="flex items-start gap-3 text-sm text-muted-soft sm:text-base"
@@ -56,7 +42,7 @@ export function ForWhom() {
               No tiene sentido si…
             </h3>
             <ul className="mt-5 space-y-3">
-              {NOT_FIT.map((t) => (
+              {content.fit.no.map((t) => (
                 <li
                   key={t}
                   className="flex items-start gap-3 text-sm text-muted-soft sm:text-base"

@@ -1,5 +1,6 @@
 import { CTAButton } from "../ui/CTAButton";
 import { SectionTag } from "../ui/SectionTag";
+import content from "@/lib/content";
 
 const PILLARS = [
   { k: "Diagnóstico", v: "Entendemos qué está pasando" },
@@ -21,37 +22,30 @@ export function Hero() {
 
       <div className="container-nexa">
         <div className="mx-auto max-w-3xl">
-          <SectionTag>Consultoría para dueños de negocios</SectionTag>
+          <SectionTag>{content.hero.label}</SectionTag>
 
-          <h1 className="heading-display mt-6 text-[2.6rem] leading-[1.05] sm:text-6xl lg:text-7xl">
-            Tu negocio crece.
-            <br />
-            Pero la cabeza{" "}
-            <span className="text-gradient">no para nunca.</span>
-          </h1>
+          <h1
+            className="heading-display mt-6 text-[2.6rem] leading-[1.05] sm:text-6xl lg:text-7xl"
+            dangerouslySetInnerHTML={{ __html: content.hero.title }}
+          />
 
           <p className="mt-6 max-w-2xl text-base text-muted-soft sm:text-lg sm:leading-relaxed">
-            Te ayudamos a entender qué está pasando en tu negocio, ordenar
-            prioridades y enfocar el esfuerzo en lo que realmente mueve los
-            resultados. Para dueños que están creciendo desordenados.
+            {content.hero.subtitle}
           </p>
-
           <div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
-            <CTAButton size="lg" location="hero">
-              Hablemos de tu negocio
-            </CTAButton>
+            <CTAButton size="lg" location="hero">{content.hero.cta}</CTAButton>
             <a
               href="#solucion"
               className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/[0.02] px-6 py-4 text-base font-semibold text-white transition hover:border-nexa-teal/60 hover:text-nexa-tealGlow"
             >
-              ¿Cómo trabajamos?
+              {content.hero.learnMore}
             </a>
           </div>
 
           <div className="mt-5 flex flex-col gap-1 text-sm text-muted-dim sm:flex-row sm:items-center sm:gap-3">
-            <span>30 min · Sin costo · Sin compromiso</span>
-            <span className="hidden text-nexa-teal/60 sm:inline">·</span>
-            <span>Te llevás claridad, decidas o no avanzar</span>
+            {content.hero.meta.map((m) => (
+              <span key={m}>{m}</span>
+            ))}
           </div>
         </div>
 
