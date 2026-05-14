@@ -15,7 +15,7 @@ export const SITE = {
   description:
     "Diagnóstico, claridad y orden para que tu negocio crezca con foco en lo que realmente mueve los resultados. Agendá una llamada de 30 minutos.",
   url: SITE_URL,
-  calendly: "https://calendly.com/enzocazenave/30min",
+  calendly: "https://calendly.com/nexastrategy/45min",
   ctaText: "Agendá una llamada",
   ctaLong: "Agendá una llamada",
   gtmId: "GTM-MBBRXNNN",
