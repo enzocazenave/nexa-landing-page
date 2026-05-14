@@ -1,10 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { SITE } from "@/lib/config";
-import {
-  GoogleTagManager,
-  GoogleTagManagerNoScript,
-} from "@/components/GoogleTagManager";
 import { CalendlyLoader } from "@/components/CalendlyLoader";
 
 const OG_TITLE = "NEXA · Consultoría para dueños de negocios";
@@ -136,14 +132,17 @@ export default function RootLayout({
           href="https://assets.calendly.com/assets/external/widget.css"
         />
         <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="3217b5f6-2e97-47e9-bc03-4105b847fdf8"
+        />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body className="font-sans antialiased">
-        <GoogleTagManagerNoScript />
         {children}
-        <GoogleTagManager />
         <CalendlyLoader />
       </body>
     </html>

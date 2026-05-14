@@ -12,7 +12,7 @@ export function Navbar() {
           <span>NEXA</span>
           <span className="text-nexa-teal">.</span>
         </a>
-        <CTAButton size="md" location="nav">
+        <CTAButton size="md">
           Hablemos
         </CTAButton>
       </div>

@@ -2,22 +2,24 @@
 
 import Link from "next/link";
 import { useEffect } from "react";
-import { trackCalendlyScheduled } from "@/lib/analytics";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
+import { trackAgendarScheduled } from "@/lib/analytics";
 
 /**
- * Página de confirmación. Si Calendly está configurado para redireccionar
- * acá tras una reserva exitosa (Settings → Confirmation → Redirect URL),
- * se dispara `calendly_scheduled` como fallback al modo embed.
+ * Página de confirmación. Calendly puede redireccionar acá tras una reserva
+ * exitosa (Settings → Confirmation → Redirect URL).
+ *
+ * Fallback de tracking: si por algún motivo el postMessage del embed no llegó,
+ * el redirect dispara `agendar_scheduled`. El dedupe por sessionStorage evita
+ * doble-conteo cuando ambos caminos disparan.
  */
 export default function GraciasPage() {
   useEffect(() => {
-    // Capturamos params que Calendly puede pasar (event_type_uuid, invitee_uuid, etc).
     const params = new URLSearchParams(
       typeof window !== "undefined" ? window.location.search : "",
     );
-    trackCalendlyScheduled({
+    trackAgendarScheduled({
       source: "redirect",
       event_type_uuid: params.get("event_type_uuid") ?? undefined,
       invitee_uuid: params.get("invitee_uuid") ?? undefined,

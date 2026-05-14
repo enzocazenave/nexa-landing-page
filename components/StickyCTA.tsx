@@ -25,7 +25,6 @@ export function StickyCTA() {
     >
       <CTAButton
         size="lg"
-        location="sticky-mobile"
         className="w-full justify-center"
       >
         {content.sticky.cta}

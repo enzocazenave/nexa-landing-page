@@ -37,7 +37,7 @@ export function Process() {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <CTAButton size="lg" location="process">
+          <CTAButton size="lg">
             {content.llamada.cta.text}
           </CTAButton>
         </div>

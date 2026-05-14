@@ -33,7 +33,7 @@ export function Hero() {
             {content.hero.subtitle}
           </p>
           <div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
-            <CTAButton size="lg" location="hero">{content.hero.cta}</CTAButton>
+            <CTAButton size="lg">{content.hero.cta}</CTAButton>
             <a
               href="#proceso-trabajo"
               className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/[0.02] px-6 py-4 text-base font-semibold text-white transition hover:border-nexa-teal/60 hover:text-nexa-tealGlow"

@@ -25,7 +25,7 @@ export function FinalCTA() {
           <p className="mt-6 text-muted-soft sm:text-lg">{content.ctaFinal.paragraph}</p>
 
           <div className="mt-10 flex flex-col items-center gap-4">
-            <CTAButton size="lg" location="final">
+            <CTAButton size="lg">
               {content.ctaFinal.cta.text}
             </CTAButton>
             <div className="flex flex-col items-center gap-1 text-sm text-muted-dim">

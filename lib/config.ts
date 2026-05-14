@@ -18,5 +18,4 @@ export const SITE = {
   calendly: "https://calendly.com/nexastrategy/45min",
   ctaText: "Agendá una llamada",
   ctaLong: "Agendá una llamada",
-  gtmId: "GTM-MBBRXNNN",
 };
