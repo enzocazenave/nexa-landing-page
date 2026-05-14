@@ -133,8 +133,9 @@ export default function RootLayout({
         />
         <script
           defer
-          src="https://cloud.umami.is/script.js"
+          src="/_a/script.js"
           data-website-id="3217b5f6-2e97-47e9-bc03-4105b847fdf8"
+          data-host-url="/_a"
         />
         <script
           type="application/ld+json"
