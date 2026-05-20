@@ -212,8 +212,8 @@ export const content = {
 
   footer: {
     brand: "NEXA.",
-    copyright: "© 2026 NEXA · hola@nexa.consulting",
-    email: "hola@nexa.consulting",
+    copyright: "© 2026 NEXA · hola@nexastrategy.io",
+    email: "hola@nexastrategy.io",
   },
 };
 
